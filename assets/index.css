@@ -1,0 +1,364 @@
+body, button {
+  background-color: #343434;
+  color: #eee;
+}
+
+#all_filters {
+  padding-left: 10px;
+}
+
+#all_filters h2 {
+  /*font-weight: bold !important;*/
+  font-size: 16px !important;
+  color: white;
+  margin-top: 20px;
+}
+
+.fixed-left {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font: 14px/16px Helvetica, Arial, sans-serif;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Info Box in upper right of map */
+.info {
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+
+/* jQuery Multiselect Styling */
+body { font:12px Helvetica, arial, sans-serif }
+h1 { margin:10px 10px 5px 0 }
+h2 { margin:10px 0 1px 0 }
+
+p { margin:2px 0 1px 0 }
+/*.sidebar { width: 270px; float: left }*/
+.sidebar h1 { float: left }
+.sidebartitle { padding-bottom: 16px; border-bottom: 2px solid gray; }
+/*.sidebartitle button { margin:10px }*/
+.hidden { visibility:hidden }
+
+.message { padding:10px; margin:15px 0; display:block; text-align:left }
+.message-title { font-weight:bold; font-size:1.25em }
+.message-body { margin-top:4px }
+.error, .notice, .success { padding:.8em; margin-bottom:1em; border:2px solid #ddd }
+.error { background:#FBE3E4; color:#8a1f11; border-color:#FBC2C4 }
+.notice { background:#FFF6BF; color:#514721; border-color:#FFD324 }
+.success { background:#E6EFC2; color:#264409; border-color:#C6D880 }
+.error a { color:#8a1f11 }
+.notice a { color:#514721 }
+.success a { color:#264409 }
+
+/*jQuery Slider Styling */
+#slider-temp { width:240px; margin:6px 0 0 8px;}
+
+/*Image Overlay Info*/
+figure {
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 15px 15px 0;
+  width:220px;
+  height:165px;
+}
+figcaption {
+  width:220px;
+  position: absolute;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
+
+#play {
+	position: absolute;
+	z-index: 999;
+	top: 62.5px;
+	left: 90px;
+}
+
+#play:hover {
+}
+
+/* GIN Credits */
+#ginCreditsContainer {
+    cursor: pointer;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    z-index: 999;  
+    height:34px;
+    /* width: 100%; */
+    white-space: nowrap;
+    background:white;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    border: 4px solid rgba(0,0,0,0.1);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;    
+    text-decoration:none;
+    color:#000;
+    font-family: Sans-Serif;
+    line-height:12px;
+    font-size:10px;
+}
+#ginCreditsContainer a {
+    /* text-decoration:none; */
+    color:#000;
+}
+
+#ginCreditsText {
+    display: inline-block;
+    position: relative;
+    left: 2px;  
+    bottom: 7px;
+}
+
+#ginCreditsLogo {
+    display: inline-block;
+    height:34px;
+    width:34px;
+}
+
+#ginLogo {
+    float:right;
+}
+
+
+/*.sidebar select {
+    width:260px;
+}*/
+
+#map {
+  /*display: none;*/
+  width: 100%;
+  height: 500px;
+  color: #444; /*override the body text color override*/
+}
+
+.leaflet-control {
+  color: #444 !important; /*override the body text color override*/
+}
+
+button {
+  padding: 10px 35px;
+  font-size: 1.2em;
+  background: #343434 !important;
+  cursor: pointer;
+  border: 1px solid #808080;
+}
+button:hover {
+  background: #121212 !important;
+}
+
+#query_feedback {
+  float: left;
+  font-size: 1.4em;
+  padding: 10px;
+}
+
+#map-toggle {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10;
+	padding: 5px 10px;
+    /*border: 1px solid #ccc;*/
+}
+
+.leaflet-control-attribution a {
+    color: #777;
+    font-size: 9px;
+}
+
+
+
+/*http://stackoverflow.com/questions/581024/css-fixed-fluid-columns*/
+
+.fixed-left {
+    float: left;
+    margin-left: -100%;
+    width: 250px;
+    height: 100%;
+}
+
+.fluid-right {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.fluid-right .fluid-content {
+    margin-left: 250px;
+	margin-top: 15px;
+}
+
+.wrap-like a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.a-like {
+    position: relative;
+}
+
+
+#like_button {
+    /*width: 30px;
+    height: 30px;    
+    margin: auto;
+    border: 1px dotted green;
+    text-align: center;*/
+}
+
+
+.like-number {  
+    display: inline-block;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    /*font-family: Clarendon !important;*/
+    color: #222;
+    /*position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    margin: 0 auto;
+    text-align: center;*/
+}
+
+.center-image-wrap {
+    position:relative;
+    text-align:center;
+    float: left;
+}
+
+.centered-text {
+    left: 0;
+    position:absolute;
+    top: -12px!important;
+    text-shadow: none;
+    width: 100%;
+}
+
+/*
+.like-btn {
+    z-index: 99;
+    width: 125px;
+    height: 125px;    
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.like-icon {  
+    display: inline-block;
+    font-size: 30px !important;
+    color: rgba(255,255,255,0.8);
+    position: relative;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    margin: 0 auto;
+}
+.like-icon:hover {
+    color: rgba(255,255,255,1.0);
+}
+*/
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+button.ui-multiselect {
+    color: #999;
+}
+
+
+.leaflet-control-layers-toggle {
+  background-image: url(leaflet/images/layers19.png) !important;
+  width: 26px;
+  height: 26px;
+}
+
+/*Fancybox*/
+.fancybox-title-float-wrap .child {
+  color: rgba(1,1,1,0);
+  padding: 0;
+}
+
+
+.leaflet-top.leaflet-left {
+  top: 40px;
+}

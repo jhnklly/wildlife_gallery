@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TNC Wildlife Cams</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="assets/jquery_multiselect/jquery.multiselect.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="js/loudev_multiselect/multi-select.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="js/chosen/chosen.css" /> -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/jquery_ui/graysquare/jquery-ui-1.10.4.custom.css" />
+	
+	<script src="assets/underscore-min.js"></script>
+	
+	<script src="assets/leaflet/leaflet.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/leaflet/leaflet.css" />
+
+	<link href="assets/vid/video-js/video-js.css" rel="stylesheet">
+	<script src="assets/vid/video-js/video.js"></script>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="js/lightbox/css/lightbox.css" /> -->
+	<script type="text/javascript" src="assets/fancybox/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.css" media="screen" />
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="assets/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="assets/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="assets/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="assets/index.css" />
+
+</head>
+<body>
+	<!-- <div class="container_12"> -->
+	<!-- <div class="pure-g"> -->
+    
+		<div id="#like_button" style="display:none;"></div>
+
+		<button id="map-toggle">></button>
+
+		<div id="map">
+			<div id="ginCreditsContainer" title="Interactive mapping by GreenInfo Network">
+				<span id="ginCreditsText" style="display:none;">
+					Interactive mapping<br>by <a target="_blank" href="http://www.greeninfo.org/">GreenInfo Network</a>
+				</span>
+				<span id="ginCreditsLogo">
+					<img id="ginLogo" src="img/greeninfo.png"></img>
+				</span>
+			</div>
+		</div>
+        
+		<div class="clear"></div>
+
+
+
+
+
+
+        <!-- <div id="main_gallery" class="grid_9"> -->
+
+        <div class="fluid-right"> <!-- fluid right div must be before fixed-left div! -->
+		    <div id="main_gallery" class="fluid-content">
+		    </div>
+		</div>
+		<!--
+			<div class="grid_3">
+				<figure class="cap-bot">
+					<a href="img/mountainlion.jpg" data-lightbox="image-1" title="My caption"><img src="img/mountainlion.jpg" alt=""></a>
+					<figcaption>
+						<p><b>Mountain Lion (male)</b><br>
+						Gonzales Bridge<br>
+						Traveling North<br>
+						11/1/2013, 2:24AM<br>
+						Waxing Crescent Moon<br>
+						54&deg;F</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		-->
+
+		<!-- <div class="sidebar pure-u-md-1-4"> -->
+		<div class="fixed-left">
+			<div class="sidebartitle">
+        		<div id="query_feedback"></div>
+				<!-- <h1>Filters</h1> -->
+				<button id="clearAll">Clear All</button>
+			</div>
+			<form id="all_filters"></form>
+        </div> <!-- end sidebar -->		
+
+
+
+    <script src="assets/purl.js"></script>
+    <script src="assets/jquery.form.js"></script>
+	<!--
+	<script src="js/jquery.wheelzoom.js"></script>
+	-->
+	<script src="assets/jquery_multiselect/src/jquery.multiselect.js"></script>
+	<!-- <script src="js/loudev_multiselect/jquery.multi-select.js"></script> -->
+	<!-- <script src="js/chosen/chosen.jquery.js"></script> -->
+	
+	<script src="assets/suncalc.js" type="text/javascript"></script>
+	<script src="assets/cameraloc.js" type="text/javascript"></script>
+	<script src="assets/index.js" type="text/javascript"></script>
+	<!-- <script src="js/lightbox/js/lightbox-2.7.js"></script> -->
+</body>
+</html>
